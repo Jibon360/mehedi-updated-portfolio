@@ -45,9 +45,6 @@ $(function (params) {
     loopCount: Infinity,
   });
 
-
-
-
   // ! animated skillbar
   var p = document.querySelectorAll(".progress-bar");
   p[0].setAttribute("style", "width:98%;transition: 1.5s all");
@@ -56,23 +53,27 @@ $(function (params) {
   p[3].setAttribute("style", "width:88%;transition: 2.7s all");
   p[4].setAttribute("style", "width:85%;transition: 3s all");
   p[5].setAttribute("style", "width:86%;transition: 3.5s all");
-
 });
 
 // !!owl carousel
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:1
-      }
-  }
-})
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+
+
+$(".fa-moon").on('click',function(){
+$("body").toggleClass("lightdark");
+});
