@@ -56,8 +56,8 @@ p {
 .p-90 {
   padding: 80px 0;
 }
-.pt-50 {
-  padding-top: 40px;
+.pb-50 {
+  padding-bottom: 40px;
 }
 .social-icon ul li a {
   height: 42px;
@@ -168,8 +168,54 @@ p {
 }
 
 /** ===========================================skill bar =========================================== */
-.progress-bar{
+.progress-bar {
   background-color: var(--pink);
   border-radius: 20px;
   height: 13px;
+}
+
+/** ===========================================services=========================================== */
+.services {
+  background-color: var(--gery);
+}
+.single-services {
+  padding: 20px 20px;
+  transition: var(--transition);
+}
+.single-services i {
+  font-size: 25px;
+  background-color: var(--pink);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  margin: 10px auto;
+  color: var(--white);
+  transition: var(--transition);
+}
+.single-services:hover.single-services i {
+  transition: var(--transition);
+  background: var(--white);
+  color: var(--pink);
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+.single-services .serv-border {
+  height: 2px;
+  background-color: var(--pink);
+  width: 150px;
+  margin: auto;
+  transition: var(--transition);
+
+}
+.single-services:hover.single-services .serv-border {
+  width: 200px;
+  transition: var(--transition);
+}
+.single-services h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.single-services p {
+  font-size: 18px;
+  line-height: 28px;
 }
