@@ -78,6 +78,16 @@ p {
   transition: var(--transition);
   transform: rotate(360deg);
 }
+
+.section-capiton h2{
+  font-weight:bold;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.section-capiton p{
+  font-size: 18px;
+  columns: var(--black);
+}
 /** ===========================================navbar/header =========================================== */
 .navbar {
   padding: 20px 0;
