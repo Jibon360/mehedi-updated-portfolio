@@ -258,3 +258,45 @@ p {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--pink);
 }
+
+/** ===========================================work =========================================== */
+.single-work {
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.single-work img {
+  transform: scale(1);
+  transition: var(--transition);
+}
+.single-work:hover.single-work img {
+  transform: scale(1.2);
+  transition: var(--transition);
+}
+.work-overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--black);
+  opacity: 0.5;
+}
+.single-work:hover .work-overly {
+  width: 100%;
+  transition: var(--transition);
+}
+.workoverly-content {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--transition);
+
+}
+.single-work:hover .workoverly-content {
+  transition: var(--transition);
+  left: 50%;
+  opacity: 1;
+}
