@@ -57,10 +57,22 @@ $(function (params) {
   p[4].setAttribute("style", "width:85%;transition: 3s all");
   p[5].setAttribute("style", "width:86%;transition: 3.5s all");
 
-
-
-
-
-
-
 });
+
+// !!owl carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})

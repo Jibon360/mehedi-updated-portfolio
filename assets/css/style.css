@@ -79,14 +79,23 @@ p {
   transform: rotate(360deg);
 }
 
-.section-capiton h2{
-  font-weight:bold;
+.section-capiton h2 {
+  font-weight: bold;
   color: var(--black);
   text-transform: capitalize;
 }
-.section-capiton p{
+.section-capiton p {
   font-size: 18px;
   columns: var(--black);
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: var(--bs-body-bg);
+  border: var(--bs-border-width) solid var(--pink);
+  border-radius: var(--bs-border-radius);
+  max-width: 100%;
+  height: auto;
 }
 /** ===========================================navbar/header =========================================== */
 .navbar {
@@ -215,7 +224,6 @@ p {
   width: 150px;
   margin: auto;
   transition: var(--transition);
-
 }
 .single-services:hover.single-services .serv-border {
   width: 200px;
@@ -228,4 +236,25 @@ p {
 .single-services p {
   font-size: 18px;
   line-height: 28px;
+}
+
+/** ===========================================testimonials =========================================== */
+
+.testimonial {
+  background-color: var(--gery);
+}
+.single-client i {
+  color: var(--pink);
+}
+.single-client img {
+  height: 100px;
+  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--pink);
 }
