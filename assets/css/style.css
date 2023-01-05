@@ -48,16 +48,35 @@ p {
 }
 
 .pt-90 {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 .pb-90 {
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
-p-90 {
-  padding: 90px 0;
+.p-90 {
+  padding: 80px 0;
 }
 .pt-50 {
-  padding-top: 50px;
+  padding-top: 40px;
+}
+.social-icon ul li a {
+  height: 42px;
+  width: 42px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  font-size: 20px;
+  transition: var(--transition);
+}
+.social-icon ul li a:hover {
+  background-color: var(--pink);
+  color: var(--gery);
+  transition: var(--transition);
+  transform: rotate(360deg);
 }
 /** ===========================================navbar/header =========================================== */
 .navbar {
@@ -88,26 +107,24 @@ p-90 {
   transition: var(--transition);
 }
 /*TODO  STICKY NAVBAR*/
-.navbg{
-    transition: var(--transition);
+.navbg {
+  transition: var(--transition);
 }
-.navbar.navbg{
-    background-color: var(--gery);
-    transition: var(--transition);
-    padding: 10px 0;
-    box-shadow: 0 .125rem .25rem rgba(var(--bs-body-color-rgb),.075)!important;
-
+.navbar.navbg {
+  background-color: var(--gery);
+  transition: var(--transition);
+  padding: 10px 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
 }
-
 
 /* !navbar-brand */
-.navbar.navbg .navbar-brand{
-    color: var(--black);
+.navbar.navbg .navbar-brand {
+  color: var(--black);
 }
 /* !navbar-nav nav-link */
-.navbar.navbg .nav-link{
-    color: var(--black);
-    transition: var(--transition);
+.navbar.navbg .nav-link {
+  color: var(--black);
+  transition: var(--transition);
 }
 
 /** ===========================================banner =========================================== */
@@ -148,4 +165,11 @@ p-90 {
 }
 .banner-text h1 {
   font-weight: bold;
+}
+
+/** ===========================================skill bar =========================================== */
+.progress-bar{
+  background-color: var(--pink);
+  border-radius: 20px;
+  height: 13px;
 }
