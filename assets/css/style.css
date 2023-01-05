@@ -97,7 +97,7 @@ p {
   max-width: 100%;
   height: auto;
 }
-.form-control{
+.form-control {
   border-radius: 2px;
 }
 .form-control:focus {
@@ -339,4 +339,10 @@ p {
 }
 .singlecontact-media p {
   font-weight: 500;
+}
+
+/** ===========================================footer =========================================== */
+footer {
+  background-color: var(--black);
+  color: var(--white);
 }
