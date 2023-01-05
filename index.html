@@ -25,7 +25,7 @@
   <body>
     <!-- ?navbar/header -->
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <nav class="navbar navbar-expand-lg fixed-top -sm">
         <div class="container">
           <a class="navbar-brand" id="logo" href="#">MEHEDI</a>
           <button
@@ -590,6 +590,104 @@
       </div>
     </section>
     <!-- ? WORK END -->
+
+    <!-- ?contact -->
+    <section class="contact p-90" id="contact">
+      <div class="container">
+        <!-- !!!section caption -->
+        <div class="section-capiton text-center pb-50">
+          <h2>Contact</h2>
+          <p>Feel free to contact me.</p>
+        </div>
+        <!-- ?contact media -->
+        <div class="row g-3">
+          <!-- TODO SINGLE CONTACT MEDIA INFO -->
+          <div class="col-lg-4">
+            <div class="singlecontact-media text-center">
+              <i class="fa-solid fa-mobile"></i>
+              <h4>Call Us</h4>
+              <p>1-800-983-233</p>
+            </div>
+          </div>
+          <!-- TODO SINGLE CONTACT MEDIA INFO END -->
+          <!-- TODO SINGLE CONTACT MEDIA INFO -->
+          <div class="col-lg-4">
+            <div class="singlecontact-media text-center">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>Mail Us</h4>
+              <p>mjjibon115@gmail.com</p>
+            </div>
+          </div>
+          <!-- TODO SINGLE CONTACT MEDIA INFO END -->
+          <!-- TODO SINGLE CONTACT MEDIA INFO -->
+          <div class="col-lg-4">
+            <div class="singlecontact-media text-center">
+              <i class="fa-solid fa-map-pin"></i>
+              <h4>Address/Location</h4>
+              <p>923 W Crooked Stick Dr,AZ, 85222</p>
+            </div>
+          </div>
+          <!-- TODO SINGLE CONTACT MEDIA INFO END -->
+        </div>
+
+        <!-- TODO CONTACT FORM -->
+        <form
+          action="./index.html"
+          class="mt-5"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="form-control"
+              placeholder="Subject"
+            />
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              name="message"
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="write your messages"
+            ></textarea>
+          </div>
+          <div class="my-3 text-end">
+            <button type="submit" class="btn btn-danger">Send Messages</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ?contact end-->
 
     <!-- !jquery library -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>

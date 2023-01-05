@@ -97,6 +97,16 @@ p {
   max-width: 100%;
   height: auto;
 }
+.form-control{
+  border-radius: 2px;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-form-control-bg);
+  border-color: var(--pink);
+  outline: 0;
+  box-shadow: none;
+}
 /** ===========================================navbar/header =========================================== */
 .navbar {
   padding: 20px 0;
@@ -293,10 +303,40 @@ p {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: var(--transition);
-
 }
 .single-work:hover .workoverly-content {
   transition: var(--transition);
   left: 50%;
   opacity: 1;
+}
+
+/** ===========================================contact =========================================== */
+.contact {
+  background: var(--gery);
+}
+.singlecontact-media {
+  padding: 30px 10px;
+  transition: var(--transition);
+}
+.singlecontact-media:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+  transition: var(--transition);
+}
+.singlecontact-media i {
+  font-size: 40px;
+  margin: 20px 0;
+  transition: var(--transition);
+}
+.singlecontact-media:hover.singlecontact-media i {
+  color: var(--pink);
+  transition: var(--transition);
+  transform: translateY(-8px);
+}
+.singlecontact-media h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.singlecontact-media p {
+  font-weight: 500;
 }
