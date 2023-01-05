@@ -1,6 +1,6 @@
 /*! =========================================== all variable ===========================================*/
 :root {
-  --pink: #ec7470;
+  --pink: #dc3545;
   --white: #fff;
   --black: #000;
   --gery: #f8f9fa;
@@ -23,6 +23,9 @@ body {
 /* font-family: 'Nunito', sans-serif; */
 
 /*?=========================================== css repeated code initialize  ===========================================*/
+.text-brand {
+  color: var(--pink);
+}
 .btn {
   border-radius: 0;
 }
@@ -55,4 +58,94 @@ p-90 {
 }
 .pt-50 {
   padding-top: 50px;
+}
+/** ===========================================navbar/header =========================================== */
+.navbar {
+  padding: 20px 0;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: var(--white);
+  font-size: 24px;
+}
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  color: var(--white);
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--pink);
+  transition: var(--transition);
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--pink);
+  transition: var(--transition);
+}
+/*TODO  STICKY NAVBAR*/
+.navbg{
+    transition: var(--transition);
+}
+.navbar.navbg{
+    background-color: var(--gery);
+    transition: var(--transition);
+    padding: 10px 0;
+    box-shadow: 0 .125rem .25rem rgba(var(--bs-body-color-rgb),.075)!important;
+
+}
+
+
+/* !navbar-brand */
+.navbar.navbg .navbar-brand{
+    color: var(--black);
+}
+/* !navbar-nav nav-link */
+.navbar.navbg .nav-link{
+    color: var(--black);
+    transition: var(--transition);
+}
+
+/** ===========================================banner =========================================== */
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black);
+  opacity: 0.7;
+  z-index: -1;
+}
+.banner-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.banner-text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.banner-text h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.banner-text h1 {
+  font-weight: bold;
 }
