@@ -1,0 +1,58 @@
+/*! =========================================== all variable ===========================================*/
+:root {
+  --pink: #ec7470;
+  --white: #fff;
+  --black: #000;
+  --gery: #f8f9fa;
+  --transition: 0.5s all;
+}
+/** ===========================================css reset code =========================================== */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+
+/*?=========================================== css repeated code initialize  ===========================================*/
+.btn {
+  border-radius: 0;
+}
+.form-control:focus {
+  box-shadow: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+p-90 {
+  padding: 90px 0;
+}
+.pt-50 {
+  padding-top: 50px;
+}
