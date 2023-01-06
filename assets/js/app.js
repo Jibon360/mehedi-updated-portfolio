@@ -76,25 +76,27 @@ $(".owl-carousel").owlCarousel({
 
 // TODO custom kursor
 new kursor({
-  type: 1
-})
+  type: 1,
+});
 // TODO loader
-$(window).load(function() {
-  $('#loading').hide();
+$(window).load(function () {
+  $("#loading").hide();
 });
 // TODO nav icon animation
-$(".navbar-toggler").on('click',function(){
+$(".navbar-toggler").on("click", function () {
   $(".fa-bars-staggered").toggleClass("fa-xmark");
-})
-{/* <i class="fa-solid fa-xmark"></i> */}
+});
+{
+  /* <i class="fa-solid fa-xmark"></i> */
+}
 // TODO webiste light dark mode
-$(".fa-moon").click(function(){
+$(".fa-moon").click(function () {
   $("body").toggleClass("darklight");
-})
+});
 // TODO colocr switcher
-$(".colorswitcher-icon").click(function(){
+$(".colorswitcher-icon").click(function () {
   $(".color-switcher").toggleClass("colorboxshow");
-})
+});
 $(".colorbtn").each(function () {
   $(this).on("click", function () {
     var color = $(this).attr("data-color");
