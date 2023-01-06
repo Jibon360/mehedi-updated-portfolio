@@ -6,7 +6,23 @@
   --gery: #f8f9fa;
   --transition: 0.5s all;
 }
+body.darklight{
+  --pink: #dc3545;
+  --white: #000;
+  --black: #fff;
+  --gery: #333;
+  --transition: 0.5s all;
+}
 
+/** ===========================================custom scrollbar =========================================== */
+::-webkit-scrollbar{
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--pink);
+  border-radius: 30px;
+}
 /** ===========================================css reset code =========================================== */
 *,
 *::before,
@@ -19,8 +35,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-
-  
+  background-color: var(--gery);
+  color: var(--black);
 }
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Nunito', sans-serif; */
@@ -31,6 +47,11 @@ body {
 }
 .btn {
   border-radius: 0;
+}
+.btn-danger{
+  background-color: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink);
 }
 .form-control:focus {
   box-shadow: 0;
@@ -48,7 +69,6 @@ p {
   font-size: 16px;
   line-height: 27px;
   font-weight: 500;
-
 }
 
 .pt-90 {
@@ -114,6 +134,21 @@ p {
 /** ===========================================navbar/header =========================================== */
 .navbar {
   padding: 20px 0;
+}
+.navbar-toggler {
+  border-radius: 0px;
+  background-color: var(--pink);
+  color: var(--white);
+  height: 35px;
+  width: 45px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-bars-staggered.fa-xmark {
+  transform: rotate(360deg);
+  transition: var(--transition);
 }
 .navbar .navbar-brand {
   font-weight: bold;
@@ -349,4 +384,76 @@ p {
 footer {
   background-color: var(--black);
   color: var(--white);
+}
+/**TODO ===========================================footer =========================================== */
+.color-switcher {
+  position: fixed;
+  top: 30%;
+  right: -281px;
+  background-color: var(--white);
+  z-index: 10;
+  transition: var(--transition);
+  padding: 10px 7px 1px 11px;
+}
+.color-switcher.colorboxshow {
+  right: 0;
+  transition: var(--transition);
+}
+
+.colorswitcher-icon {
+  height: 40px;
+  width: 40px;
+  background: var(--pink);
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 34px;
+  left: -39px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--white);
+}
+.colorbtn {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.red {
+  background-color: #ff4757;
+}
+.yellow {
+  background-color: #ffc312;
+}
+.green {
+  background-color: #009432;
+}
+.blue {
+  background-color: #0652dd;
+}
+.orange {
+  background-color: #f28123;
+}
+
+/* ??!! responsive media query */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: var(--gery);
+    transition: var(--transition);
+    padding: 10px 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
+  }
+  /* !navbar-brand */
+  .navbar .navbar-brand {
+    color: var(--black);
+  }
+/* !navbar-nav nav-link */
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  color: var(--black);
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: var(--transition);
+  text-align: center;
+}
 }

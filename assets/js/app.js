@@ -46,6 +46,7 @@ $(function (params) {
   });
 
   // ! animated skillbar
+
   var p = document.querySelectorAll(".progress-bar");
   p[0].setAttribute("style", "width:98%;transition: 1.5s all");
   p[1].setAttribute("style", "width:90%;transition: 1.7s all");
@@ -73,7 +74,26 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-
-$(".fa-moon").on('click',function(){
-$("body").toggleClass("lightdark");
+// TODO custom kursor
+new kursor({
+  type: 1
+})
+// TODO nav icon animation
+$(".navbar-toggler").on('click',function(){
+  $(".fa-bars-staggered").toggleClass("fa-xmark");
+})
+{/* <i class="fa-solid fa-xmark"></i> */}
+// TODO webiste light dark mode
+$(".fa-moon").click(function(){
+  $("body").toggleClass("darklight");
+})
+// TODO colocr switcher
+$(".colorswitcher-icon").click(function(){
+  $(".color-switcher").toggleClass("colorboxshow");
+})
+$(".colorbtn").each(function () {
+  $(this).on("click", function () {
+    var color = $(this).attr("data-color");
+    document.documentElement.style.setProperty("--pink", color);
+  });
 });
