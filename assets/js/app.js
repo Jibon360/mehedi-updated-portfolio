@@ -78,6 +78,10 @@ $(".owl-carousel").owlCarousel({
 new kursor({
   type: 1
 })
+// TODO loader
+$(window).load(function() {
+  $('#loading').hide();
+});
 // TODO nav icon animation
 $(".navbar-toggler").on('click',function(){
   $(".fa-bars-staggered").toggleClass("fa-xmark");
